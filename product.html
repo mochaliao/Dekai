@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dekai</title>
+	<!--rwd-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- FavIcons -->
+	<link rel="icon" href="resource/img/favicon/favicon.ico">
+	<link rel="icon" href="resource/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="resource/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="manifest" href="resource/img/favicon/manifest.json">
+	<link rel="apple-touch-icon" href="resource/img/favicon/apple-icon-180x180.png" sizes="180x180">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="resource/css/style.css">
+	<link rel="stylesheet" href="resource/css/styleInner.css">
+	<link rel="stylesheet" href="resource/css/lightbox.css">
+
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+</head>
+<style>
+	.page_picker {
+		display: inline-block;
+		padding: 3px;
+		margin-left: 3px;
+	}
+</style>
+
+<body id="all">
+<nav>
+	<div class="headerMenuTrigger" onclick="openNav()">
+		<img src="resource/img/icons/hamburger.svg">
+	</div>
+	<div id="mySidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="resource/img/icons/close.svg"></a>
+		<a href="about.html">關於我們 About Us</a>
+		<a href="product.html">產品介紹 Products</a>
+		<a href="service.html">服務項目 Services</a>
+		<a href="contact.html">聯絡我們 Contact Us</a>
+	</div>
+</nav>
+<header>
+	<div class="container-narrow headerWrap">
+		<div class="headerIcon">
+			<a href="index.html"><img src="resource/img/icons/logo.svg" alt="dekai"></a>
+		</div>
+		<div class="headerMenu">
+			<a href="about.html">關於我們 About Us</a>
+			<a href="product.html">產品介紹 Products</a>
+			<a href="service.html">服務項目 Services</a>
+			<a href="contact.html">聯絡我們 Contact Us</a>
+		</div>
+	</div>
+</header>
+<div id="overlay" onclick="closeNav()"></div>
+
+<section class="bannerArea product">
+	<div class="container-narrow displayTable">
+		<p class="bannerTitle text-center displayTd verticalMiddle">產品介紹<br>Products</p>
+	</div>
+</section>
+
+<section class="innerArea">
+	<div class="container-narrow">
+		<div class="innerProductWrap">
+			<div class="innerProductItems" onclick="openModal();currentSlide(1)">
+				<a>
+					<span class=""><img src="resource/img/products/product-001.jpg" alt="女士牛皮休閒鞋"></span>
+					<span class="pt-2">女士牛皮休閒鞋<br>cow leather</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(2)">
+				<a>
+					<span class=""><img src="resource/img/products/product-002.jpg" alt="鏡面牛皮厚底休閒鞋"></span>
+					<span class="pt-2">鏡面牛皮 厚底休閒鞋<br>cow leather</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(3)">
+				<a>
+					<span class=""><img src="resource/img/products/product-003.jpg" alt="牛反毛短靴"></span>
+					<span class="pt-2">牛反毛短靴<br>Suede</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(4)">
+				<a>
+					<span class=""><img src="resource/img/products/product-004.jpg" alt="手工牛皮平底鞋"></span>
+					<span class="pt-2">手工牛皮平底鞋<br>hand made shose - cow leather </span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(5)">
+				<a>
+					<span class=""><img src="resource/img/products/product-005.jpg" alt="牛反毛"></span>
+					<span class="pt-2">牛反毛<br>Suede</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(6)">
+				<a>
+					<span class=""><img src="resource/img/products/product-006.jpg" alt="牛反毛休閒鞋"></span>
+					<span class="pt-2">牛反毛休閒鞋<br> Suede</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(7)">
+				<a>
+					<span class=""><img src="resource/img/products/product-007.jpg" alt="牛反毛短靴"></span>
+					<span class="pt-2">牛反毛短靴 <br>Suede-1</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(8)">
+				<a>
+					<span class=""><img src="resource/img/products/product-008.jpg" alt="男士牛皮休閒鞋"></span>
+					<span class="pt-2">男士牛皮休閒鞋 <br>cow leather</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(9)">
+				<a>
+					<span class=""><img src="resource/img/products/product-009.jpg" alt="牛皮機車鞋"></span>
+					<span class="pt-2">牛皮機車鞋<br>motorcycle shose - cow leather</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(10)">
+				<a>
+					<span class=""><img src="resource/img/products/product-010.jpg" alt="絨布厚底休閒鞋"></span>
+					<span class="pt-2">絨布厚底休閒鞋</span>
+				</a>
+			</div>
+
+			<div class="innerProductItems" onclick="openModal();currentSlide(11)">
+				<a>
+					<span class=""><img src="resource/img/products/product-009.jpg" alt="牛皮機車鞋"></span>
+					<span class="pt-2">牛皮機車鞋<br>motorcycle shose - cow leather</span>
+				</a>
+			</div>
+			<div class="innerProductItems" onclick="openModal();currentSlide(12)">
+				<a>
+					<span class=""><img src="resource/img/products/product-010.jpg" alt="絨布厚底休閒鞋"></span>
+					<span class="pt-2">絨布厚底休閒鞋</span>
+				</a>
+			</div>
+		</div>
+		<div id="pp_container" class="text-center"></div>
+	</div>
+</section>
+
+<!-- The Modal/Lightbox -->
+<div id="productItemsWrap" class="modal">
+	<span class="close cursor" onclick="closeModal()"><img src="resource/img/icons/cancel.svg"> </span>
+	<div class="modal-content">
+
+		<div class="productItem">
+			<img src="resource/img/products/product-001.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-002.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-003.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-004.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-005.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-006.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-007.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-008.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-009.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-010.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-009.jpg">
+		</div>
+
+		<div class="productItem">
+			<img src="resource/img/products/product-010.jpg">
+		</div>
+
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)"><img src="resource/img/icons/left.svg"></a>
+		<a class="next" onclick="plusSlides(1)"><img src="resource/img/icons/right.svg"></a>
+
+	</div>
+
+</div>
+
+<footer class="text-center">Designed by De-Kai Company</footer>
+
+<script src="resource/js/nav.js"></script>
+<script src="resource/js/headerScroll.js"></script>
+<script src="resource/js/lightbox.js"></script>
+<script src="resource/js/pagination_.js"></script>
+</body>
+</html>
